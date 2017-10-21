@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="bitso.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bitcoin</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="nav-wrapper yellow accent-3">
+            <a href="#" class="brand-logo center black-text">Bitcoin Ticker</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Bitcoin Price -->
+      <div class="container">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Bitcoin Price</span>
+            <p id="last"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holdings -->
+      <div class="row">
+        <!-- Columna 1 - 4 -->
+        <div class="col s4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Low</span>
+              <p id="low"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Termina Columna 1 - 4 -->
+
+        <!-- Columna 2 - 4 -->
+        <div class="col s4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">High</span>
+              <p id="high"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Termina Columna 2 - 4 -->
+
+      <!-- Columna 3 - 4 -->
+        <div class="col s4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Volume</span>
+              <p id="volume"></p>
+            </div>
+          </div>
+        </div>
+          <!-- Termina Columna 3 - 4 -->
+      </div>
+
+      <!--Formulario-->
+      <div class="row">
+        <div class="col s3">
+          <div class="input-field">
+            <input placeholder="Monto" id="monto" type="number">
+          </div>
+        </div>
+
+      <div class="col s3" id="boton-precio">
+        <a class="waves-effect waves-light btn">calcular</a>
+      </div>
+
+      <div class="col s3">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p id="precio-bitcoin"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s3">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <p id="total"></p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </main>
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript"src="mainbitso.js"></script>
+  </body>
+</html>
